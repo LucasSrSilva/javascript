@@ -15,7 +15,7 @@ switch(operacao){
     case 2:
         console.log("Você escolheu sacar!\n");
         dinheiro = rl.questionFloat("Quanto deseja sacar? ");
-        saldo > dinheiro ? (saldo -= dinheiro) + console.log("Seu novo saldo é: R$" + saldo.toFixed(2)) : console.log("Saldo insuficiente!");
+        saldo > dinheiro && dinheiro < 0 ? (saldo -= dinheiro) + console.log("Seu novo saldo é: R$" + saldo.toFixed(2)) : console.log("Saldo insuficiente!");
         break;
     case 3:
         console.log("Você escolheu depositar!\n");
